@@ -5,3 +5,8 @@
 - Tuples: (1, 2, 3, 'spam'), tuple('spam'), namedTupes, etc
 - Dictonaries: {'food': 'spam', 'taste':'yum'}, dict(hours=10)
 - Sets: set('abc'), {'a', 'b', 'c'}
+- File: open('eggs.txt', "wb")
+- Boolean: True, False
+- None: None (Empty, Nothing)
+- Functions, modules, classes
+- Advance: Decorators, Generators, Iterators, MetaProgramming
