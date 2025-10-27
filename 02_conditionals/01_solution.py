@@ -1,3 +1,6 @@
+'''
+Question-1: Age Group Categoritaion
+'''
 def check_age(age):
     if age < 13:
         return "Child"
