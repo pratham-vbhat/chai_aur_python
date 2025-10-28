@@ -7,7 +7,7 @@ def select_transport_mode(distance):
         return "walk"
     elif 3<= distance < 15:
         return "take bike"
-    elif distance >= 15:
+    else:
         return "take car"   
 
 user_name = input("Enter your name: ")
