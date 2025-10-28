@@ -6,19 +6,24 @@ Yellow - Ripe
 Brown  - Overripe
 '''
 
-def ripe_checker(ripe):
-    if ripe == "Green":
+def ripe_checker(fruit, ripe):
+    if ripe.lower() == "green":
         return "Unripe"
-    elif ripe == "Yellow":
+    elif ripe.lower() == "yellow"  or ripe.lower() == "red":
         return "Ripe"
-    elif ripe == "Brown":
+    elif ripe.lower() == "brown":
         return "Overripe"
     else:
         return "Invalid Input"
+        
+
+information_list = ["banana", "apple"]
 
 fruit_name = input("Enter the name of the fruit: ")
 fruit_color = input("Enter the current color of the fruit: ")
 
-ripeness = ripe_checker(fruit_color)
-
-print(f"Your {fruit_name} furit is {fruit_color} in color. So it's {ripeness}.")
+if fruit_name in information_list:
+    ripeness = ripe_checker(fruit_name, fruit_color)
+    print(f"Your {fruit_name} furit is {fruit_color} in color. So it's {ripeness}.")
+else:
+    print(f"Sorry I currently do not have any information on {fruit_name} fruit!!!. Thank you for your time.")
