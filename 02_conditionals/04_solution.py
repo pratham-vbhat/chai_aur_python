@@ -1,5 +1,4 @@
-"""
-Question-4: Fruit Ripness Checker
+"""Question-4: Fruit Ripness Checker
 
 Green  - Unripe
 Yellow - Ripe
@@ -10,12 +9,11 @@ Brown  - Overripe
 def ripe_checker(fruit, ripe):
     if ripe.lower() == "green":
         return "Unripe"
-    elif ripe.lower() == "yellow" or ripe.lower() == "red":
+    if ripe.lower() == "yellow" or ripe.lower() == "red":
         return "Ripe"
-    elif ripe.lower() == "brown":
+    if ripe.lower() == "brown":
         return "Overripe"
-    else:
-        return "Invalid Input"
+    return "Invalid Input"
 
 
 information_list = ["banana", "apple"]
@@ -28,5 +26,5 @@ if fruit_name in information_list:
     print(f"Your {fruit_name} furit is {fruit_color} in color. So it's {ripeness}.")
 else:
     print(
-        f"Sorry I currently do not have any information on {fruit_name} fruit!!!. Thank you for your time."
+        f"Sorry I currently do not have any information on {fruit_name} fruit!!!. Thank you for your time.",
     )

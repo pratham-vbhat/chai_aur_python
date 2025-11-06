@@ -38,7 +38,7 @@ tea_shops = {
     },
     "Tea" : {
         "Green" : "Fresh",
-        "Black" : "Strong"
+        "Black" : "Strong",
     },
 }
 

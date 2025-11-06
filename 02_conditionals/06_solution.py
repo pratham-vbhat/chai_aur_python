@@ -1,15 +1,13 @@
-"""
-Question-6: Transport Mode Seletction:
+"""Question-6: Transport Mode Seletction:
 """
 
 
 def select_transport_mode(distance):
     if distance < 3:
         return "walk"
-    elif 3 <= distance < 15:
+    if 3 <= distance < 15:
         return "take bike"
-    else:
-        return "take car"
+    return "take car"
 
 
 user_name = input("Enter your name: ")
