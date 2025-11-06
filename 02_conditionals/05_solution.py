@@ -1,6 +1,7 @@
-'''
+"""
 Question-5: Weather Activity Suggestion
-'''
+"""
+
 
 def weather_activity(weather):
     if weather.lower() == "sunny":
@@ -11,6 +12,7 @@ def weather_activity(weather):
         return "build a Snowman"
     else:
         return f"Invalid Weather or currently we do not have any information on the {weather}"
+
 
 user_name = input("Kindly enter your name: ")
 weather = input(f"{user_name}, could you kindly enter the current weather: ")

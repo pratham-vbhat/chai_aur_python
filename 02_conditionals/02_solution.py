@@ -1,6 +1,6 @@
-'''
+"""
 Question-2: Movie Ticket Pricing
-'''
+"""
 
 # def check_age(age):
 #     if age < 18:
@@ -8,11 +8,14 @@ Question-2: Movie Ticket Pricing
 #     else:
 #         return 12
 
+
 def check_weekday(week, price):
     if week.lower() == "wednesday":
         return price - 2
     else:
         return price
+
+
 user_name = input("Enter the name of the user: ")
 user_age = int(input(f"Enter the {user_name}'s age: "))
 
@@ -26,7 +29,6 @@ day_of_week = input("Which day of the week is today?: ")
 
 check_discounts = check_weekday(day_of_week, ticket_price)
 
-print(f"Hy {user_name}, thank you for your ticket purchace!!!. As it is {day_of_week}, your movie ticket price is: ${check_discounts}")
-
-
-
+print(
+    f"Hy {user_name}, thank you for your ticket purchace!!!. As it is {day_of_week}, your movie ticket price is: ${check_discounts}"
+)

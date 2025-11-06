@@ -1,6 +1,7 @@
-'''
+"""
 Question-9. Leap Year Checker
-'''
+"""
+
 
 def check_leap_year(year):
     if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):
