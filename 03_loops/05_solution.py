@@ -5,6 +5,7 @@ count = 0
 
 for char in text:
     if text.count(char) == 1:
-        print(f"The 1st Non-Repeated character from the input text (\"{text}\") is: {char}")
+        print(
+            f'The 1st Non-Repeated character from the input text ("{text}") is: {char}')
     else:
         continue
