@@ -2,7 +2,7 @@
 
 num: int = int(input("Enter a number: "))
 
-isPrime: bool = True
+isprime: bool = False
 
 if num > 1:
     for i in range(2, num):
@@ -12,5 +12,5 @@ if num > 1:
             isPrime = True
 
 print(
-    f"The Number you entered {num} is (Prime means True and Not Prime is False): {isPrime}",
+    f"The Number you entered {num} is (Prime means True and Not Prime is False): {isprime}",
 )
